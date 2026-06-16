@@ -11,6 +11,8 @@ public class Autor {
 	public void setNome(String nome) {
 		if (nome != null && !nome.trim().isEmpty()) {
 			this.nome = nome;
+		} else {
+			System.out.println("Nome inválido!!!");
 		}
 	}
 
@@ -21,7 +23,8 @@ public class Autor {
 	public void setNacionalidade(String nacionalidade) {
 		if (nacionalidade != null && !nacionalidade.trim().isEmpty()) {
 			this.nacionalidade = nacionalidade;
+		} else {
+			System.out.println("Nacionalidade inválido!!!");
 		}
 	}
-
 }
